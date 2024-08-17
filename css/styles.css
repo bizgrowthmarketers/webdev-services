@@ -63,4 +63,15 @@
   #root, #__next {
     isolation: isolate;
   }
-  
+  :root {
+    --darkcyan: #083531;
+    --teal: #125055;
+  --jade: #189b90;
+  --seagreen: #46afa6; /*189B90 20%*/
+  --turquoise: #28b1bb;
+  --lime: #82c244;
+  --peru: #ee8725;
+  --peach: #F7C392 /*EE8725 50%*/
+  --moccasin: #FFD393; /*FFA726 50%*/
+  --white: #fff;
+}
