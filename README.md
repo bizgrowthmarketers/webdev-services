@@ -23,7 +23,8 @@ If you accidentally started making changes in the development branch and now wan
 
 
 implementations
-<section class = 'section/feature-nameidea'>
+```html
+<section class="section/feature-nameidea">
 //your codes
 </section>
 
