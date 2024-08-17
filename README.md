@@ -1,5 +1,6 @@
 # webdev-services
 webdev landing page
+
 1. CLONE the repository
 2. Always "Fetch origin" before starting to work, so you have the updated/latest code
 3. Don' forget to create Feature/Section branch you are working on prefixing your name. ex. name-navbar  name-feature-cards  name-issue#1
@@ -31,3 +32,4 @@ implementations
 3. kebab-case
 4. section by section - lets do it like react components
 5. chat gpt, gemini, bing is your friend and can be your mentor too, available 24/7
+
