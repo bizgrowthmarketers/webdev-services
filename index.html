@@ -1,17 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
+    <title>Webdev</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>WebDev</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav><h2>Navbar</h2>
+        <p>c/o</p>
+      </nav>
+    </header>
     <main>
-        <section>
-            <h1>Hello Team!</h1>
-        </section>
+      <section>
+        <h1>Hero</h1>
+        <p>c/o</p>
+      </section>
+      <section>
+        <h2>Your Problem, Our Solution</h2>
+        <p>painpoints c/o perci</p>
+      </section>
+      <section>
+        <h2>What We Do</h2>
+        <p>services c/o</p>
+      </section>
+      <section>
+        <h2>Why Choose Us</h2>
+        <p>advantages c/o s'cyfred</p>
+      </section>
+      <section class="section section-portfolio">
+        <div class="container container-portfolio">
+          <h2 class="section-portfolio-title">Our Work in Action</h2>
+          <p class="section-portfolio-details">
+            Explore our diverse projects and see how we bring ideas to life with
+            innovation and expertise
+          </p>
+        </div>
+        <!-- website design -->
+        <div class="website-design-container">
+          <h3 class="section-title">Website Designs</h3>
+          <swiper-container>
+            <div class="swiper coverflow">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide image-container">
+                  <img
+                    src="./images/cocktailsapp.jpg"
+                    alt="cocktailsapp website"
+                  />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/cocktails-app/"
+                      target="_blank"
+                      >Cocktails App</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide image-container">
+                  <img src="./images/filmoteka.jpg" alt="filmoteka website" />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/movie-app/"
+                      target="_blank"
+                      >Filmoteka</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide image-container">
+                  <img src="./images/foodgram.jpg" alt="foodgram website" />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/food-gram/"
+                      target="_blank"
+                      >Foodgram</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide image-container">
+                  <img
+                    src="./images/icecreamapp.jpg"
+                    alt="icecreamapp website"
+                  />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/ice-cream-app/"
+                      target="_blank"
+                      >Ice Cream App</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide image-container">
+                  <img
+                    src="./images/realstatehomyz.jpg"
+                    alt="realstatehomyz website"
+                  />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/real-estate-homyz/"
+                      target="_blank"
+                      >Real Estate Homyz</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide image-container">
+                  <img src="./images/watchspot.jpg" alt="watchspot website" />
+                  <div class="overlay-text">
+                    <a
+                      href="https://bizgrowthmarketers.tech/the-watch-spot/"
+                      target="_blank"
+                      >Watchspot</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </swiper-container>
+        </div>
+        <!-- website development -->
+        <div class="website-development-container">
+          <h3 class="section-title">Website Development</h3>
+          <ul class="scroll scroll-wrapper">
+            <li class="scroll-images">
+              <img src="./images/cocktailsapp.jpg" alt="cocktailsapp website" />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/cocktails-app/"
+                  target="_blank"
+                  >Cocktails App</a
+                >
+              </div>
+            </li>
+            <li class="scroll-images">
+              <img src="./images/filmoteka.jpg" alt="filmoteka website" />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/movie-app/"
+                  target="_blank"
+                  >Filmoteka</a
+                >
+              </div>
+            </li>
+            <li class="scroll-images">
+              <img src="./images/foodgram.jpg" alt="foodgram website" />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/food-gram/"
+                  target="_blank"
+                  >Foodgram</a
+                >
+              </div>
+            </li>
+            <li class="scroll-images">
+              <img src="./images/icecreamapp.jpg" alt="icecreamapp website" />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/ice-cream-app/"
+                  target="_blank"
+                  >Ice Cream App</a
+                >
+              </div>
+            </li>
+            <li class="scroll-images">
+              <img
+                src="./images/realstatehomyz.jpg"
+                alt="realstatehomyz website"
+              />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/real-estate-homyz/"
+                  target="_blank"
+                  >Real Estate Homyz</a
+                >
+              </div>
+            </li>
+            <li class="scroll-images">
+              <img src="./images/watchspot.jpg" alt="watchspot website" />
+              <div class="scroll-text">
+                <a
+                  href="https://bizgrowthmarketers.tech/the-watch-spot/"
+                  target="_blank"
+                  >Watchspot</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- plug-in development -->
+        <div class="plugin-development-container">
+          <div class="plugin-title-container">
+            <h3 class="section-title">Plug-in Development</h3>
+            <p class="plugin-details">
+              We design and implement plugins and custom features tailored to
+              your website, ensuring that your site’s performance remains
+              optimal.
+            </p>
+            <p>
+              Our plugins adhere to <strong>WordPress</strong> standards to
+              enhance user experience.
+            </p>
+          </div>
+          <div class="plugin-gadget-container">
+            <div class="plugin-laptop-container">
+              <img
+                class="plugin-laptop"
+                src="./images/pluginlaptop.jpg"
+                alt="laptop showing a website"
+              />
+            </div>
+            <div class="plugin-phone-container">
+              <img
+                class="plugin-phone"
+                src="./images/pluginphone.jpg"
+                alt="smartphone showing a website"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Our Web Development Process</h2>
+        <p>c/o perci</p>
+      </section>
+      <section>
+        <h2>Testimonials</h2>
+        <p>c/o s'cyfred</p>
+      </section>
+      <section>
+        <h2>FAQ</h2>
+        <p>c/o m'judielyn</p>
+      </section>
     </main>
-</body>
+    <footer>
+      <h2>Footer</h2>
+      <p>c/o m'judielyn</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/coverflow.js"></script>
+  </body>
 </html>
