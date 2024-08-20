@@ -80,6 +80,70 @@ html {
 --black: #000
 }
 /* %%%%%%%%%% End of CSS reset %%%%%%%%%% */
+.section-painpoints {
+  width: 1440px;
+  max-width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+.container-painpoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+}
+.section-painpoints-title {
+  font-size: 4rem;
+}
+.problem {
+  color: var(--peru);
+}
+.solution {
+  color: var(--jade);
+}
+.section-painpoints-details {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.painpoint-detail-container {
+  display: flex;
+  padding: 0 40px 0 40px;
+  margin: 0;
+  gap: 40px;
+}
+.painpoint-image-container {
+  flex: 1;
+}
+.painpoint-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 10px;
+  flex: 2;
+  padding-bottom: 90px;
+}
+.painpoint-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Roboto Sans';
+}
+.painpoint-detail {
+  font-size: 1.25rem;
+  font-family: 'Roboto';
+}
+.swiper-pagination-bullet {
+  background-color: var(--turquoise);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--peru);
+}
+/* portfolio */
 .section-portfolio {
   width: 1440px;
   max-width: 100%;
@@ -120,8 +184,8 @@ html {
   padding-bottom: 20px;
 }
 .coverflow {
-  width: 1300px;
-  height: 600px;
+  /* width: 1360px; */
+  height: 700px;
   margin: 0 auto;
 }
 .swiper-slide{
@@ -160,8 +224,8 @@ margin: 0;
 .scroll-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
-  height: 700px;
+  width: 99%;
+  height: 600px;
   overflow-y: auto;
   margin: 0 auto;
   scrollbar-width: thin;
@@ -204,8 +268,9 @@ margin: 0;
   align-items: center;
   align-content: center;
 }
-.plugin-title-container p {
+.plugin-details {
   font-size: 1.25rem;
+  text-align: center;
 }
 .plugin-gadget-container {
   display: flex;
@@ -216,3 +281,95 @@ margin: 0;
 .plugin-phone {
   margin-top: 200px;
 }
+/* %%%%%%%%%% process section %%%%%%%%%% */
+.section-process {
+  width: 1440px;
+  max-width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+.section-process-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 200px;
+}
+.section-process-title {
+  font-size: 4rem;
+  color: var(--white);
+}
+.section-process-details {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.container-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, var(--turquoise) 0%, var(--teal) 100%);
+  padding: 20px 60px 20px 60px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  white-space: nowrap;
+  width:fit-content;
+}
+.aos-container {
+  padding-bottom: 300px;
+
+}
+.aos-border {
+  border-radius: 15px;
+  border: 1px solid var(--black);
+  box-shadow: 0 4px 8px rgba(0, 4, 8, 0.4);
+  padding: 0 30px 0 30px;
+  height: 400px;
+}
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.step-number {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;  
+  font-size: 150px;   
+  font-weight: bold; 
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--lime);
+  color: var(--white);
+}
+.step-icon {
+  display: flex; 
+  justify-content: center;
+  align-items: center;    
+  width: 150px;
+  height: 150px;
+  overflow: hidden;   
+}
+.step-icon img {
+  max-width: 100%;           
+  max-height: 100%;        
+  object-fit: contain;         
+}
+.step-description-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--jade);
+}
+.step-description {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.process-description {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
