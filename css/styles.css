@@ -358,6 +358,24 @@ html {
   gap: 30px;
 }
 
+.why-choose-us-list-item-title{
+  color: var(--Color, #189B90);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.why-choose-us-list-item-subtitle{
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 .why-choose-us-list-item:hover {
   transform: translateY(-10px);
