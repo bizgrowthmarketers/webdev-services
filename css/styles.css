@@ -83,7 +83,7 @@ html {
 .section-painpoints {
   width: 1440px;
   max-width: 100%;
-  padding: 40px;
+  padding: 40px 0;
   margin: 0 auto;
 }
 .container-painpoints {
@@ -166,7 +166,7 @@ html {
 .section-features {
   width: 1440px;
   max-width: 100%;
-  padding: 40px;
+  padding: 40px 0;
   margin: 0 auto;
 }
 .container-features {
@@ -250,7 +250,7 @@ html {
 .section-portfolio {
   width: 1440px;
   max-width: 100%;
-  padding: 40px;
+  padding: 40px 0;
   margin: 0 auto;
 }
 .container-portfolio {
