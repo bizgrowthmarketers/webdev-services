@@ -251,6 +251,11 @@ html {
   /* background-color: #2A4A5B; */
   color: white;
   text-align: center;
+
+  width: 1440px;         /* Sets the width of the section to 1440px */
+  max-width: 100%;       /* Ensures the section doesn't exceed the viewport width */
+  padding: 40px 0;       /* Adds vertical padding of 40px to the section */
+  margin: 0 auto;   
 }
 
 .why-choose-us-container{
