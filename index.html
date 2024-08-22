@@ -25,16 +25,70 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav><h2>Navbar</h2>
-        <p>c/o</p>
-      </nav>
+    <header class="header">
+      <div class="container container-header">
+          <div class="header-logo-wrap">
+          <img src="./images/biz.png" alt="bizgrowthmarketers logo"/>
+          </div>
+          <nav class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">WEB DESIGN &</br>DEVELOPMENT</a>
+                <div class="modal-content">
+                </div>
+              </li>
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">SEO</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">Paid Ads</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">Social Media</br>Marketing</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">Content</br>Marketing</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./" class="nav-list-item-link">Email</br>Marketing</a>
+              </li>
+            </ul>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Hero</h1>
-        <p>c/o</p>
-      </section>
+      <section class="section section-hero">
+        <div class="section background-hero">
+          <div class="container container-hero">
+            <h1 class="section-hero-title">
+                Maximize Your Business<br/>Growth with
+                <br/>
+                <div class="words rotate">
+                  <span>Affordable,</span>
+                  <span>Reliable,</span>
+                  <span>SEO Ready,</span>
+                  <span>Structured Navigation,</span>
+                </div>
+                <br/>
+                <span class="development">Web Development</span>
+            </h1>
+            <p class="section-hero-details">We Solve Your Web Development<br/>Challenges with Tailored Solutions<br/>that Drive Success</p>
+          </div>
+          <div class="hero-buttons">
+            <button type="button" class="button-know hvr-shutter-in-horizontal">Want to Know How </button>
+            <button type="button" class="button-consultation hvr-curl-bottom-right">Book a FREE Consultation</button>
+          </div>
+          <div class="stats-container">
+          <div class="milestone-container">
+            <p class="counter-container">497+</p>
+            <p class="stats-name">Web Projects</p>
+          </div>
+          <div class="achivement-container">
+            <p class="counter-container">30,000+</p>
+            <p class="stats-name">Creatives Added</p>
+          </div> 
+          </div>
+        </div>
+        </section>
       <!-- painpoints -->
       <section class="section section-painpoints">
         <div class="container container-painpoints">
@@ -85,7 +139,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="button-container"><button class="consultation-button hvr-float-shadow">Book a FREE Consultation</button></div>
+        <div class="button-container"><button type="button" class="consultation-button hvr-radial-out">Book a FREE Consultation</button></div>
       </section>
       <!-- features -->
       <section class="section section-features">
@@ -328,10 +382,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide image-container">
-                  <img
-                    src="./images/icecreamapp.jpg"
-                    alt="icecreamapp website"
-                  />
+                  <img src="./images/icecreamapp.jpg" alt="icecreamapp website" />
                   <div class="overlay-text">
                     <a
                       href="https://bizgrowthmarketers.tech/ice-cream-app/"
@@ -443,11 +494,8 @@
           <div class="plugin-title-container">
             <h3 class="section-title">Plug-in Development</h3>
             <p class="plugin-details">
-              We design and implement plugins and custom features tailored to
-              your website, ensuring that your site’s performance remains
-              optimal.
-            </p>
-            <p>
+              We design and implement plugins and custom features tailored to your
+              website, ensuring that your site’s performance remains optimal.</br>
               Our plugins adhere to <strong>WordPress</strong> standards to
               enhance user experience.
             </p>
@@ -479,11 +527,11 @@
           <p class="section-process-details">
             Developing a website is a multi-stage process that involves planning, designing, developing, and launching. Here’s a detailed look at our comprehensive approach to ensure your website is built to perfection.
           </p>
-          </div>
+        </div>
           <div class="aos-container">
             <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="500"
             data-aos-delay="500">
               <div class="step aos-border">
                 <div class="step-number">1</div>
@@ -507,7 +555,7 @@
               <div class="step-number">2</div>
               <div class="step-details">
                 <p class="step-description-title">Planning and Research</p>
-              <p class="step-description">Requirement Gathering: <span class="process-description">Define the website’s purpose, audience, and key features</span></p>
+              <p class="step-description">Requirement Gathering: <span class="process-description">Define the website’s purpose, audience,</br>and key features</span></p>
               <p class="step-description">Market Research: <span class="process-description">Analyze competitors and gather inspiration</span></p>
               <p class="step-description">Sitemap & Wireframes: <span class="process-description">Develop a visual guide of the site’s structure</span></p>
             </div>
@@ -520,6 +568,7 @@
         <div class="aos-container">
           <div data-aos="fade-right" data-aos-offset="300"
           data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
           data-aos-delay="500">
             <div class="step aos-border">
               <div class="step-number">3</div>
@@ -527,7 +576,7 @@
                 <p class="step-description-title">Design</p>
               <p class="step-description">Mockups and Prototypes: <span class="process-description">Create detailed page designs</span></p>
               <p class="step-description">User Experience (UX): <span class="process-description">Ensure easy navigation and usability</span></p>
-              <p class="step-description">User Interface (UI): <span class="process-description">Design visual elements like colors, typography and images</span></p>
+              <p class="step-description">User Interface (UI): <span class="process-description">Design visual elements like colors,</br>typography and images</span></p>
             </div>
             <div class="step-icon">
               <img src="./images/icons/webdesign.png" alt="Web design Icon">
@@ -538,15 +587,15 @@
         <div class="aos-container">
           <div data-aos="flip-down"
           data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="500"
             data-aos-delay="500">
             <div class="step aos-border">
               <div class="step-number">4</div>
               <div class="step-details">
                 <p class="step-description-title">Development</p>
-              <p class="step-description">Frontend Development: <span class="process-description">Transform designs into a functional website using</br> HTML, CSS, and JavaScript</span></p>
-              <p class="step-description">Backend Development: <span class="process-description">Establish the server, database, and server-side</br> applications to support the frontend</span></p>
-              <p class="step-description">Integration: <span class="process-description">Seamlessly integrate the frontend and backend,</br> ensuring smooth data flow and functionality</span></p>
+              <p class="step-description">Frontend Devt.: <span class="process-description">Transform designs into a functional website using</br>HTML, CSS, and JavaScript</span></p>
+              <p class="step-description">Backend Devt.: <span class="process-description">Establish the server, database, and</br>server-side applications to support the frontend</span></p>
+              <p class="step-description">Integration: <span class="process-description">Seamlessly integrate the frontend and backend,</br>ensuring smooth data flow and functionality</span></p>
             </div>
             <div class="step-icon">
               <img src="./images/icons/development.png" alt="Development Icon">
@@ -555,15 +604,15 @@
           </div>
         </div>
         <div class="aos-container">
-          <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom"
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500"
           data-aos-delay="500">
             <div class="step aos-border">
               <div class="step-number">5</div>
               <div class="step-details">
                 <p class="step-description-title">Testing & Launch</p>
-              <p class="step-description">Testing: <span class="process-description">Perform functionality, usability, and performance testing.</br> Fix any bugs or issues</span></p>
-              <p class="step-description">Optimization: <span class="process-description">Ensure the website is optimized for speed and search engines (SEO)</span></p>
-              <p class="step-description">Launch: <span class="process-description">Deploy the website to a live server, ensuring its accessibility to the public</span></p>
+              <p class="step-description">Testing: <span class="process-description">Perform functionality, usability, and performance testing.</br>Fix any bugs or issues</span></p>
+              <p class="step-description">Optimization: <span class="process-description">Ensure the website is optimized for speed and</br>search engines (SEO)</span></p>
+              <p class="step-description">Launch: <span class="process-description">Deploy the website to a live server,</br>ensuring its accessibility to the public</span></p>
             </div>
             <div class="step-icon">
               <img src="./images/icons/testing.png" alt="Testing Icon">
@@ -779,13 +828,13 @@
       <h2>Footer</h2>
       <p>c/o m'judielyn</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/coverflow.js"></script>
-
+    <button id="scrollToTopBtn" class="scroll-to-top-btn"><img src="./images/icons/uparrow.png" alt="up arrow icon"></button>
     <script type="module" src="./js/faq.js"></script>
-
-    <script type="module" src="./js/pagination.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./js/coverflow.js"></script>
+    <script type="module" src="./js/pagination.js"></script>
+    <script src="./js/scrollToTop.js"></script>
     <script>
       AOS.init();
     </script>
