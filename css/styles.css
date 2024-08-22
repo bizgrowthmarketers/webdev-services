@@ -224,6 +224,19 @@ margin: 0;
   margin: 0 auto;
 }
 
+.faq-container::before {
+  content: "?";
+  position: absolute;
+  /* top: 50%;  */
+  left: 70%;
+  /* transform: translate(-50%, -50%);  */
+  font-size: 800px; 
+  color: rgba(130, 194, 68, 0.2);
+  z-index: 0; /* Place behind the content */
+  pointer-events: none; /* Make sure it doesn’t interfere with content interaction */
+  font-weight: bold;
+}
+
 .hidden {
   visibility: hidden;
   height: auto;
