@@ -456,7 +456,9 @@ html {
   text-align: left;
 
   display: inline-flex;
-  padding: 45px 360px 36px 80px;
+
+  padding-left: 80px;
+
   align-items: center;
 
   opacity: var(--sds-size-stroke-border);
@@ -472,9 +474,12 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  width: 100%;
 
   opacity: var(--sds-size-stroke-border);
-
+  /* width: 100%; */
+  /* white-space: nowrap; */
+  /* display:block */
 }
 
 
@@ -663,9 +668,6 @@ html {
   height: 100%;
 }
 
-
-
-
 .why-choose-us-list-item-content {
   display: flex;
   flex-direction: column;
@@ -842,6 +844,192 @@ margin: 0;
 .plugin-phone {
   margin-top: 200px;
 }
+
+/*----------------testimonials STYLES---------------------------------------*/
+
+.section-testimonials {
+
+  width: 1440px;         /* Sets the width of the section to 1440px */
+  max-width: 100%;       /* Ensures the section doesn't exceed the viewport width */
+  padding: 40px 0;       /* Adds vertical padding of 40px to the section */
+  margin: 0 auto;   
+
+  position: relative;
+  overflow: hidden;
+}
+
+#section-testimonials-background-video {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+
+.section-testimonials-header-text-container {
+
+  display: flex;
+  width: 641px;
+  height: 135px;
+  padding: 54px 299px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin: 0 auto; 
+
+  border-radius: 10px;
+  opacity: var(--sds-size-stroke-border);
+  background: linear-gradient(180deg, #28B1BB 0%, #125055 100%);
+
+}
+
+.section-testimonials-header-text {
+ 
+  color: var(--Colors-LightMode-Text-text-100, #FFF);  
+  text-align: center;
+  font-family: "Roboto Serif";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+  opacity: var(--sds-size-stroke-border);
+  
+}
+
+.section-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-testimonials-container h3 {
+  color: #000;
+  font-family: "Roboto Serif";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 23px;
+
+  text-align: left;
+  align-self: flex-start; 
+  padding-left: 69px;
+
+}
+
+
+.section-testimonials-header-text p {
+  font-size: 1.2em;
+  color: #666;
+
+}
+
+.section-testimonial-lists {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-left: 69px;
+  padding-right: 69px;
+  gap: 32px;
+}
+
+.section-testimonial-list-item {
+
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px);
+  min-width: 250px;
+  position: relative;
+
+  border-radius: 28px;
+  opacity: var(--sds-size-stroke-border);
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.section-testimonial-icon-quotes {
+  width: 40px;
+  height: 55px;
+  opacity: 0.7;
+  padding-left: 10px;
+}
+
+.section-testimonial-message{
+
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 29px;
+
+}
+.section-testimonial-message p {
+  
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  flex-shrink: 0;
+}
+
+.section-testimonial-message-by-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 12px;
+  opacity: var(--sds-size-stroke-border);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 74px;
+
+}
+
+.section-testimonial-icon-image-container {
+  margin-right: 15px;
+}
+
+.section-testimonial-icon-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-testimonial-message-by-name-position h3 {
+  color: #000;
+  text-align: left;
+  font-family: "Roboto Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: var(--sds-size-stroke-border);
+  padding: 0px;
+  margin: 0;
+}
+
+.section-testimonial-message-by-name-position p {
+  color: #000;
+  text-align: left;
+  font-family: "Roboto Serif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
 /* --------------------------------------------------------------FAQ------------------------------------------------------------------------- */
 
 .faq-container {
