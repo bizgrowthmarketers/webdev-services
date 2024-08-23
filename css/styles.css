@@ -991,8 +991,8 @@ margin: 0;
   opacity: var(--sds-size-stroke-border);
   background: rgba(0, 0, 0, 0.05);
   padding: 10px;
+  margin-bottom: 30px;
   margin-bottom: 74px;
-
 }
 
 .section-testimonial-icon-image-container {
