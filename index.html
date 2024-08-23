@@ -824,90 +824,120 @@
     </main>
 
       <!---------------------------------------------------------------FOOTER----------------------------------------------------------------------------->
-    <footer>
-      <div class="footer-container">
-          <!-- <div class="footer-custom-shape"> -->
-            <!-- <svg width="1400" height="1000" viewBox="0 0 1053 488" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 440C0 456.802 0 465.203 3.2698 471.62C6.14601 477.265 10.7354 481.854 16.3803 484.731C22.7976 488 31.1984 488 48 488H989.732C1017.9 488 1031.99 488 1039.95 482.102C1046.88 476.961 1051.27 469.079 1051.98 460.474C1052.8 450.602 1045.37 438.633 1030.52 414.695L835.592 100.51C831.022 93.144 828.737 89.4609 825.681 86.6643C822.973 84.1871 819.835 82.2276 816.42 80.8832C812.565 79.3654 808.253 78.9298 799.628 78.0587L52.8234 2.63242C34.5213 0.783936 25.3703 -0.14032 18.2959 2.85718C12.0819 5.49011 6.93725 10.1414 3.69321 16.0593C0 22.7967 0 31.9943 0 50.3895V440Z" fill="white"/>
-              <image href="./images/biz.png" x="50" y="30" height="150px" width="150px" class="footer-logo"/>
-              <text class="footer-text" x="130" y="50" fill="#0A142F" font-size="22px" font-family="Arial, sans-serif" font-weight="bold">
-                We can help you bring
-                <tspan x="130" dy="1.4em">your ideas to life. Let's talk</tspan>
-                <tspan x="130" dy="1.4em">about what we can build</tspan>
-                <tspan x="130" dy="1.4em">and raise together</tspan>
-              </text>
-            </svg> -->
-          <!-- <div class="footer-content">
-            <img src="./images/biz.png" alt="Business Growth Marketers Logo" class="footer-logo">
-            <p class="footer-text">We can help you bring your ideas to life. Let's talk about what we can build and raise together.</p>
-            </div> -->
-            <div class="footer-shape">
-              <img src="./images/footer/footer-shape.png" alt="footer-shape" class="footer-shape-rectangle">
-            <div class="footer-logo">
-              <img src="./images/biz.png" alt="Business Growth Marketers Logo">
+      <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <img src="./images/footer/footer-shape.png" alt="footer-shape" class="footer-shape-rectangle">
+                <div class="footer-logo">
+                    <img src="./images/biz.png" alt="Business Growth Marketers Logo">
+                </div>
+                <div class="footer-text">
+                    <p>We can help you bring your ideas to life. Let's talk about what we can build and raise together.</p>
+                </div>
+                <div class="footer-form-container">
+                  <form class="footer-contact-form">
+                    <div class="footer-form-group">
+                        <input type="text" id="username" name="username" placeholder="John Doe" required>
+                    </div>
+                    <div class="footer-form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="footer-form-group">
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="footer-form-group">
+                        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                        <label for="privacy-policy">I have read and accept the <a href="#">privacy policy</a></label>
+                    </div>
+                    <div class="footer-form-group">
+                        <button type="submit" class="send-message-btn">Send Message</button>
+                    </div>
+                  </form>
+                </div>
             </div>
-            <div class="footer-text">
-              <p>We can help you bring your ideas to life.<br>
-              Let's talk about what we can build and raise together.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="footer-right">
-            <div class="services">
-                <h3>Services</h3>
-                <ul>
-                    <li>Web Design & Development</li>
-                    <li>SEO</li>
-                    <li>Paid Ads</li>
-                    <li>Social Media Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>Content Creator</li>
-                </ul>
-            </div>
-            <div class="information">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-            <div class="company">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="footer-sub-content">
+                <div class="services">
+                    <h3>Services</h3>
+                    <ul class="footer-services-list">
+                        <li>Web Design & Development</li>
+                        <li>SEO</li>
+                        <li>Paid Ads</li>
+                        <li>Social Media Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Content Creation</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <h3>Information</h3>
+                    <ul class="footer-information-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h3>Company</h3>
+                    <ul class="footer-company-list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
                 <div class="contact-info">
-                    <p><i class="fas fa-phone"></i> +63 977 609 3691</p>
-                    <p><i class="fas fa-envelope"></i> info@bizgrowthmarketers.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Makati City, Philippines</p>
+                  <ul class="contact-info-list">
+                    <li>
+                      <div class="contact-item">
+                        <img src="/images/footer/footer-phone.svg" alt="Phone Icon"> 
+                        <p> +63 977 609 3691</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact-item">
+                        <img src="/images/footer/footer-email.svg" alt="Email Icon"> 
+                        <p>info@bizgrowthmarketers.com</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact-item">
+                        <img src="/images/footer/footer-address.svg" alt="Address Icon"> 
+                        <p>Makati City, Philippines</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="newsletter">
-                <h3>Follow the latest from us with our daily newsletter</h3>
-                <form id="newsletter-form">
-                    <input type="email" placeholder="Email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <div class="newsletter">
+                    <h3>Follow the latest from us with our daily newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2024 Web Dev. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
-            <a href="#">Cookies</a>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-list">
+            <li class="footer-bottom-list-item">
+              <p>© 2024 Business Growth Marketers | All rights reserved.   </p>
+            </li>
+            <li class="footer-bottom-list-item">
+              <div class="footer-social-media">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="/images/footer/footer-fb.svg" alt="Facebook" width="45" height="45" >
+                </a>
+                <div class="footer-linkedin-icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-media-text">
+                  <img src="/images/footer/footer-linkedin.svg" alt="LinkedIn" width="45" height="45"class="footer-icons">
+                </a>
+              </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-media-text">
+                  /businessgrowthmarketers
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
     </footer>
+    
     <button id="scrollToTopBtn" class="scroll-to-top-btn"><img src="./images/icons/uparrow.png" alt="up arrow icon"></button>
     <script type="module" src="./js/faq.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
