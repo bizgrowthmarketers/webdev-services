@@ -1557,7 +1557,7 @@ margin: 0;
 
 /* -----------------------------------------------------------FOOTER------------------------------------------------------------------------- */
 footer {
-  background: linear-gradient(180deg, #28B1BB 14%, #125055 100%);
+  background: linear-gradient(180deg, var(--turquoise,#28B1BB) 14%, #125055 100%);
   color: white;
   overflow: hidden;
 }
@@ -1568,12 +1568,10 @@ footer {
   align-items: flex-start;
   max-width: 1400px;
   margin: 0 auto;
-  /* padding: 0 20px; */
-    /* position: relative; */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .footer-content {
@@ -1658,16 +1656,13 @@ footer {
 }
 
 .footer-sub-content ul li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
 .contact-info {
-  /* margin: 10px 0; */
   margin-right: 50px;
   font-size: 16px;
-  /* display: flex; */
-  /* align-items: inline-flex; */
 }
 
 .contact-item {
@@ -1690,18 +1685,14 @@ footer {
   margin-bottom: 10px;
 }
 
-.newsletter button {
+.subscribe-button {
   padding: 10px 20px;
   background-color: var(--peru);
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   width: 100%;
-}
-
-.newsletter button:hover {
-  background-color: #E35F06;
 }
 
 .newsletter .social-media {
@@ -1729,13 +1720,13 @@ footer {
 }
 
 .social-media a {
-  color: white;
+  color: var(--white);
   margin-right: 15px;
   font-size: 18px;
   text-decoration: none;
 }
 .social-media-text{
-  color: var(--Colors-LightMode-Text-text-100, #FFF);
+  color: var(--white);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -1748,9 +1739,6 @@ footer {
   justify-content: left;
   margin-left: 43px;
   text-decoration: none;
-  /* text-align: center; */
-  /* margin-top: 40px; */
-  /* padding-top: 20px; */
   border-top: 1px solid #147A8B;
 }
 .footer-bottom p {
@@ -1758,7 +1746,7 @@ footer {
 }
 .footer-links a {
   margin: 0 10px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 .footer-links a:hover {
@@ -1768,15 +1756,14 @@ footer {
 .footer-contact-form {
   padding: 30px 15px;
   border-radius: 20px;
-  opacity: var(--sds-size-stroke-border);
-  background: #FFF;
+  background: var(--white);
 }
 .footer-form-container {
   width: 85%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0px 80.6px 105.701px 0px rgba(51, 51, 51, 0.10);
   position: absolute;
@@ -1799,9 +1786,9 @@ textarea {
   font-size: 16px;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid var(--Dark, #0A142F);
-  background: var(--White, #FFF);
-  color: var(--Dark, #0A142F);
+  border: 1px solid #0A142F;
+  background: var(--white);
+  color:#0A142F;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -1833,7 +1820,7 @@ label a:hover {
 /* Submit Button */
 .send-message-btn {
   background-color: var(--peru);
-  color: #FFFFFF;
+  color: var(--white);
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -1842,10 +1829,6 @@ label a:hover {
   width: 100%;
   border-radius: 10px;
   opacity: var(--sds-size-stroke-border);
-  background: #EE8725;
   box-shadow: 0px 24px 34px 0px rgba(32, 70, 100, 0.10);
-}
-.send-message-btn:hover {
-  background-color: #E35F06;
 }
 
