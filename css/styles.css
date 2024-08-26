@@ -385,7 +385,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0 2rem 1rem 2rem;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 .section-painpoints-title {
   font-size: 4rem;
@@ -407,14 +407,14 @@ html {
   gap: 40px;
 }
 .painpoint-image-container {
-  flex: 1;
+  flex: 2;
 }
 .painpoint-description-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  gap: 10px;
+  gap: 1rem;
   flex: 2;
 }
 .painpoint-title {
@@ -1367,7 +1367,6 @@ html {
   text-align: center;
   background: linear-gradient(180deg, var(--turquoise) 0%, var(--teal) 100%);
   padding: 2rem;
-  margin-bottom: 3rem;
   line-height: normal;
 }
 .section-process-container {
@@ -1380,6 +1379,8 @@ html {
   text-align: center;
 }
 .section-process-details {
+  display: block;
+  padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
   line-height: normal;
@@ -1403,7 +1404,7 @@ html {
   box-shadow: 0 4px 8px rgba(0, 4, 8, 0.4);
   width: calc(100% - 80px);
   height: 15rem;
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
 }
 .step-number {
   display: flex;
