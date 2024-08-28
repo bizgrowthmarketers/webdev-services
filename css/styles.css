@@ -81,7 +81,6 @@ h6 {
   overflow-wrap: break-word;
 }
 body {
-  min-height: 100vh;
   line-height: normal;
   background-color: #fff;
   color: #000;
@@ -252,6 +251,7 @@ html {
   padding-bottom: clamp(1.25rem, 0.8152rem + 2.1739vw, 2.5rem);
   color: var(--turquoise);
   line-height: normal;
+  contain: content;
 }
 .section-hero-details {
   font-family: "Roboto Sans";
@@ -825,32 +825,12 @@ html {
 }
 .swiper-image-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+}
+.swiper-image-container img {
   cursor: pointer;
 }
-/* .overlay-text {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translate(-50%);
-  color: #000;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  background-color: #ffffff75;
-  border-radius: 5px;
-  white-space: nowrap;
-  line-height: 1.2;
-}
-.overlay-text:hover {
-  color: var(--peru);
-  cursor: pointer;
-} */
 /* website development */
-/* .section-title-container {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-} */
 .website-development-container {
   width: 100%;
   margin: 0 auto;
@@ -858,6 +838,7 @@ html {
   border-radius: 15px;
   border: 1px solid var(--black);
   margin-bottom: 3rem;
+  background-color: var(--offWhite);
 }
 .scroll-wrapper {
   display: flex;
@@ -871,11 +852,10 @@ html {
   padding-left: 0.188rem;
 }
 .scroll-images {
-  width: 33.33%;
   padding: 1rem;
 }
 .scroll-images img {
-  max-width: 100%;
+  width: 100%;
   max-height: 37rem;
 }
 .scroll-text {
@@ -886,9 +866,6 @@ html {
   white-space: nowrap;
   padding: 1rem 0;
   text-decoration: underline;
-}
-.scroll-images img:hover {
-  filter: brightness(97%);
 }
 .scroll-text:hover {
   color: var(--peru);
@@ -907,19 +884,19 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-bottom: 3rem;
 }
 .plugin-details {
   font-size: 1.25rem;
   text-align: center;
 }
-.plugin-gadget-container {
+.plugin-img-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   align-content: center;
 }
-.plugin-phone {
-  margin-top: 12.5rem;
+.plugin-img-container img {
+  cursor: pointer;
 }
 
 /*----------------testimonials STYLES---------------------------------------*/
@@ -1585,10 +1562,6 @@ html {
   animation: float 30s ease-in-out infinite;
   border-radius: 50%;
 }
-/* .particle {
-  position: absolute;
-  animation: float 30s ease-in-out infinite;
-} */
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0);
