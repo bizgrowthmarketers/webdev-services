@@ -13,7 +13,7 @@ const designsData = [
       "https://drive.google.com/file/d/1TN3zz78Gxzc2mCwfEBfdgerPOjMe9Pb5/view",
   },
   {
-    imgSrc: "../images/webDesigns/FoodSta.webp",
+    imgSrc: "./images/webDesigns/FoodSta.webp",
     altText: "a foodsta website",
     linkUrl:
       "https://drive.google.com/file/d/1UcBPf9Vjawtz1M8sx6Bwg0mEctRnpOOY/view",
