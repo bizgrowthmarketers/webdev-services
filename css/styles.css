@@ -1667,14 +1667,53 @@ footer {
 
 .contact-item {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 10px;
+  align-items: flex-start;
 }
 
 .contact-info-list{
   padding: 0;
   align-items: center;
   display: block;
+}
+
+.contact-info-list a{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info-list a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* .contact-info-list a:hover {
+  color: var(--peru); 
+  transform: scale(1.05); 
+} */
+
+/* .contact-info-list a:hover img {
+  transform: scale(1.2);
+  filter: sepia(1) saturate(5) hue-rotate(10deg) brightness(0.9);
+  color: var(--peru);
+} */
+
+.contact-info-list a:hover {
+  color: var(--peru); 
+  transform: scale(1.05); 
+}
+
+.contact-info-list a:hover img {
+  transform: scale(1.2); 
+  background-color: #CD853F; 
+  border-radius: 50%;
+  background-color: transparent; 
+  transition: background-color 0.3s ease;
+  filter: none;
+
 }
 
 .newsletter input {
