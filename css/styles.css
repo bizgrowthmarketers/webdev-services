@@ -1022,6 +1022,7 @@ html {
   padding-right: 30px;
   margin-bottom: 29px;
 
+
 }
 .section-testimonial-message p {
   
@@ -1029,7 +1030,7 @@ html {
   text-align: center;
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
+  font-style: italic;
   font-weight: 300;
   line-height: normal;
 
