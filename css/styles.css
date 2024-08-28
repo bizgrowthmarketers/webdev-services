@@ -80,6 +80,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/* CSS reset  */
 body {
   line-height: normal;
   background-color: #fff;
@@ -101,7 +102,7 @@ html {
   --offWhite: #f7f5f2;
   --fluid-20-40: clamp(1.25rem, 0.8152rem + 2.1739vw, 2.5rem);
 }
-/* CSS reset  */
+
 /* header nav */
 .header {
   position: sticky;
