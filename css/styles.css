@@ -1801,6 +1801,33 @@ footer {
   display: inline-flex;
   align-items: center;
   display: inline-flex;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.footer-social-media a:hover img {
+  transform: scale(1.2); 
+  background-color: var(--peru) ;
+  background-color: transparent; 
+  transition: background-color 0.3s ease;
+  filter: none;
+}
+
+.footer-fb-icon {
+  background-color: var(--lime);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.footer-fb-icon:hover {
+  transform: scale(1.2);
+  background-color: var(--peru); 
 }
 
 .footer-linkedin-icon{
@@ -1813,7 +1840,14 @@ footer {
   height: 45px;
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.footer-linkedin-icon:hover {
+  transform: scale(1.2);
+  background-color: var(--peru); 
+}
+
 
 .social-media a {
   color: var(--white);
@@ -1821,6 +1855,7 @@ footer {
   font-size: 18px;
   text-decoration: none;
 }
+
 .social-media-text{
   color: var(--white);
   font-family: Roboto;
@@ -1828,7 +1863,13 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
   }
+
+.social-media-text:hover{
+  color: var(--peru);
+}
+
 .footer-bottom-list {
   display: flex;
   align-items: center;
@@ -1837,23 +1878,28 @@ footer {
   text-decoration: none;
   border-top: 1px solid #147A8B;
 }
+
 .footer-bottom p {
   padding: 24px;
 }
+
 .footer-links a {
   margin: 0 10px;
   color: var(--white);
   text-decoration: none;
 }
+
 .footer-links a:hover {
   text-decoration: underline;
 }
+
 /* Form Container */
 .footer-contact-form {
   padding: 30px 15px;
   border-radius: 20px;
   background: var(--white);
 }
+
 .footer-form-container {
   width: 85%;
   max-width: 400px;
@@ -1868,6 +1914,7 @@ footer {
   transform: translateX(-50%);
   z-index: 2;
 }
+
 /* Form Group */
 .footer-form-group {
   margin-bottom: 20px;
@@ -1891,28 +1938,35 @@ textarea {
   font-weight: 400;
   line-height: normal;
 }
+
 textarea {
   height: 120px;
   resize: none;
 }
+
 /* Checkbox */
 input[type="checkbox"] {
   margin-right: 10px;
   vertical-align: middle;
 }
+
 label {
   font-size: 14px;
 }
+
 label a {
   color: #007BFF;
   text-decoration: none;
 }
+
 label[for="privacy-policy"] {
   color: black;
 }
+
 label a:hover {
   text-decoration: underline;
 }
+
 /* Submit Button */
 .send-message-btn {
   background-color: var(--peru);
