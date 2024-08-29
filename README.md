@@ -14,22 +14,14 @@ Our content creation services include:
 - **Plagiarism-Free Guarantee:** Ensuring all content is original and unique.
 
 ## Contact us
-For inquiries about website development or SEO services and request a quote, please contact [https://www.bizgrowthmarketers.com] at [info@bizgrowthmarketers.com].
-
-
-
-
-
+For inquiries about website development or SEO services and to request a quote, please visit [BizGrowth Marketers](https://www.bizgrowthmarketers.com) or contact us via email at [info@bizgrowthmarketers.com](mailto:info@bizgrowthmarketers.com).
 
 ## Technologies Used
-- **HTML5:** <i class="fa-solid fa-html5"></i> For structuring the content.
-- **CSS3:** <i class="fa-solid fa-css3"></i> For styling and layout.
-- **JavaScript:** <i class="fa-brands fa-js"></i> For adding interactivity and dynamic content.
+- **HTML5:** For structuring the content.
+- **CSS3:** For styling and layout.
+- **JavaScript:** For adding interactivity and dynamic content.
 
-**Contributors:**
-- Percival Aceron - [https://github.com/perci-aceron].
-
-**Getting Started:**
+## Getting Started
 1. Clone this repository and open the `index.html` file.
 ```bash
 git clone https://github.com/bizgrowthmarketers/webdev-services.git
@@ -37,10 +29,9 @@ git clone https://github.com/bizgrowthmarketers/webdev-services.git
 2. Install dependencies (if any).
 3. Start the development server.
 
+## Contributors
+- Percival Aceron - [GitHub Profile](https://github.com/perci-aceron)
 
+## License
+This project is licensed under the MIT License.
 
-
-
-**License:**
-* MIT License
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
