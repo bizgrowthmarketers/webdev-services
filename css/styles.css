@@ -211,13 +211,22 @@ html {
   text-shadow: 0 0 5px var(--white), 0 0 10px var(--white),
     0 0 15px var(--white), 0 0 20px var(--white);
 }
+/* @media screen and (min-width:380px) {
+  .round-man {
+    top: 35%;
+    left: 60%;
+    width: 100px;
+    height: 100px;
+  }
+} */
 @media screen and (max-width: 767px) {
   .round-laptop {
     display: none;
   }
   .round-man {
-    top: -2%;
-    left: 60%;
+    display: none;
+    /* bottom: 35%;
+    left: 63%; */
   }
 }
 @media screen and (min-width: 768px) {
