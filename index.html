@@ -83,13 +83,15 @@
             </p>
           </div>
           <div class="hero-buttons">
-            <button type="button" class="button-know hvr-shutter-in-horizontal">
+            <button type="button" 
+            class="button-know hvr-shutter-in-horizontal" 
+            onclick="document.getElementById('footer-know-how').scrollIntoView({ behavior: 'smooth' })">
               Want to Know How
             </button>
             <button
               type="button"
-              class="button-consultation hvr-curl-bottom-right"
-              onclick="window.open('https://calendar.app.google/25YrZTPW2WefFWNJA', '_blank', 'noopener,noreferrer');"
+              class="button-consultation hvr-grow-rotate "
+              onclick="document.getElementById('footer-consultation').scrollIntoView({ behavior: 'smooth' })"
             >
               Book a FREE Consultation
             </button>
@@ -573,6 +575,7 @@
         <!-- website design -->
         <div class="website-design-container">
           <h3 class="section-title">Website Designs</h3>
+          <p class="development-details">Explore the product by clicking on the images</p>
           <swiper-container>
             <div class="swiper coverflow">
               <div class="swiper-button-prev"></div>
@@ -584,6 +587,7 @@
         <div class="website-development-container">
           <div class="section-title-container">
             <h3 class="section-title">Website Development</h3>
+            <p class="development-details">Explore the product by clicking on the images</p>
           </div>
           <ul class="scroll scroll-wrapper"></ul>
         </div>
@@ -591,7 +595,7 @@
         <div class="plugin-development-container">
           <div class="plugin-title-container">
             <h3 class="section-title">Plug-in Development</h3>
-            <p class="plugin-details">
+            <p class="development-details">
               We design and implement plugins and custom features tailored to
               your website, ensuring that your site’s performance remains
               optimal.<br />
@@ -838,7 +842,7 @@
           </div>
         </div>
       </section>
-      <!-- section testimonials -->
+      <!-- testimonials -->
       <section class="section-testimonials">
         <video autoplay muted loop id="section-testimonials-background-video">
           <source
@@ -952,7 +956,6 @@
           </ul>
         </div>
       </section>
-
       <!-- faq -->
       <section class="faq section">
         <div class="container faq-container">
@@ -1203,7 +1206,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="footer-container">
         <div class="footer-content">
@@ -1224,7 +1226,7 @@
               can build and raise together.
             </p>
             <!-- <button class="footer-btn">Submit</button> -->
-            <button class="footer-btn hvr-radial-out" onclick="window.open('https://calendar.app.google/25YrZTPW2WefFWNJA', '_blank', 'noopener,noreferrer');">
+            <button class="footer-btn hvr-shutter-out-horizontal" id="footer-consultation" onclick="window.open('https://calendar.app.google/25YrZTPW2WefFWNJA', '_blank', 'noopener,noreferrer');">
               Book a FREE consultation
           </button>
           </div>
@@ -1269,7 +1271,7 @@
                 >
               </div>
               <div class="footer-form-group">
-                <button type="submit" class="send-message-btn hvr-radial-out">
+                <button type="submit" class="send-message-btn hvr-shutter-in-vertical" id="footer-know-how">
                   Send Message
                 </button>
               </div>
@@ -1343,7 +1345,7 @@
             <h3>Follow the latest from us with our daily newsletter</h3>
             <form id="newsletter-form">
               <input type="email" placeholder="Email address" required />
-              <button type="submit" class="subscribe-button hvr-radial-out">
+              <button type="submit" class="subscribe-button hvr-shutter-out-vertical">
                 Subscribe
               </button>
             </form>
