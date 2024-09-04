@@ -1,39 +1,28 @@
 // designsData.js
 const designsData = [
   {
-    imgSrc: "./images/webDesigns/Constra.webp",
+    imgSrc: "./images/portfolio/Constra.webp",
     altText: "a construction website",
-    linkUrl:
-      "https://drive.google.com/file/d/1KyLjYumPgz7TO8LcMS4JRRNsfAwMSm6n/view",
+    linkUrl: "https://bizgrowthmarketers.tech/construction-website/",
   },
   {
-    imgSrc: "./images/webDesigns/HellEn.webp",
+    imgSrc: "./images/portfolio/HellEn.webp",
     altText: "english tutorial website",
-    linkUrl:
-      "https://drive.google.com/file/d/1TN3zz78Gxzc2mCwfEBfdgerPOjMe9Pb5/view",
+    linkUrl: "https://bizgrowthmarketers.tech/english-program/",
   },
   {
-    imgSrc: "./images/webDesigns/FoodSta.webp",
-    altText: "a foodsta website",
-    linkUrl:
-      "https://drive.google.com/file/d/1UcBPf9Vjawtz1M8sx6Bwg0mEctRnpOOY/view",
+    imgSrc: "./images/portfolio/Foodgram.webp",
+    altText: "a foodgram website",
+    linkUrl: "https://bizgrowthmarketers.tech/food-gram/",
   },
   {
-    imgSrc: "./images/webDesigns/YatchJet.webp",
-    altText: "yatch boat rental website",
-    linkUrl:
-      "https://drive.google.com/file/d/1MO8mfje-o9ob1Ie9Gil4nsPRbkfDs1Ox/view",
+    imgSrc: "./images/portfolio/YachtJet.webp",
+    altText: "yacht boat rental website",
+    linkUrl: "https://bizgrowthmarketers.tech/yacht-rental/",
   },
   {
-    imgSrc: "./images/webDesigns/GymFit.webp",
+    imgSrc: "./images/portfolio/GymFit.webp",
     altText: "gym website",
-    linkUrl:
-      "https://drive.google.com/file/d/1Uh65XH5pY4Z7_43FoK63eLuFlEc5TNug/view",
-  },
-  {
-    imgSrc: "./images/webDesigns/Restaurant.webp",
-    altText: "restaurant website",
-    linkUrl:
-      "https://drive.google.com/file/d/1qGroA5aGcJkviAggCemIxO_6UsGPCbky/view",
+    linkUrl: "https://bizgrowthmarketers.tech/gym-fit/",
   },
 ];

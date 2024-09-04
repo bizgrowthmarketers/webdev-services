@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     linkElement.href = project.linkUrl;
     linkElement.target = "_blank";
     linkElement.textContent = project.linkText;
+    linkElement.classList.add("scroll-text");
 
     textDiv.appendChild(linkElement);
     listItem.appendChild(imgElement);
