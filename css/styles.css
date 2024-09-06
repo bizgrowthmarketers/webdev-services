@@ -522,7 +522,7 @@ html {
 .features-list:hover .features-title {
   opacity: 0;
 }
-/* Why choose us */
+/*---------------------------------- Why choose us -----------------------------*/
 .why-choose-us {
   background-color: var(--white);
   color: white;
@@ -780,12 +780,13 @@ html {
 .why-choose-us-list-item-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align to the start of the flex container */
+  align-items: flex-start;
 }
 
 .why-choose-us-list-item-title {
   font-size: 20px;
   margin-bottom: 10px;
+  /* margin: auto; */
 }
 
 .why-choose-us-list-item-subtitle {
@@ -795,13 +796,141 @@ html {
 
 .why-choose-us-list-item-title,
 .why-choose-us-list-item-subtitle {
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
-@media (max-width: 768px) {
-  .why-choose-us-list-item {
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .why-choose-us-container {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  .section-why-choose-us-heading-container {
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+  }
+  .section-why-choose-us-heading-text-container {
     width: 100%;
+    padding: 20px 0;
+  }
+  .section-why-choose-us-heading-text {
+    font-size: 48px;
+    margin: auto;
+  }
+  .section-why-choose-us-heading-subtitle-container {
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  .section-why-choose-us-heading-subtitle-text {
+    font-size: 24px; 
+    text-align: center;
+  }
+
+  .section-why-choose-us-heading-subtitle-list{
+    padding: 0;
+  }
+
+  .section-why-choose-us-list {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .why-choose-us-list-item {
+    width: 100%; 
+    margin-bottom: 20px;
+    padding: 20px; 
+  }
+  .why-choose-us-list-item-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-choose-us-list-item-title {
+    font-size: 18px; 
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .why-choose-us-list-item-subtitle {
+    font-size: 14px;
+    text-align: center;
   }
 }
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .why-choose-us-container {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  .section-why-choose-us-heading-container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .section-why-choose-us-heading-text-container {
+    width: 100%;
+    padding: 10px 0; 
+  }
+  .section-why-choose-us-heading-text {
+    font-size: 36px;
+    margin: auto;
+  }
+  .section-why-choose-us-heading-subtitle-container {
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-why-choose-us-heading-subtitle-text {
+    font-size: 20px; 
+    text-align: center;
+  }
+  .section-why-choose-us-list {
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+  }
+  .why-choose-us-list-item {
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 15px;
+  }
+  .why-choose-us-list-item-container {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+  .why-choose-us-list-item-title {
+    font-size: 16px; 
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .why-choose-us-list-item-subtitle {
+    font-size: 14px;
+  }
+  .why-choose-us-list-item-icon1,
+  .why-choose-us-list-item-icon2,
+  .why-choose-us-list-item-icon3,
+  .why-choose-us-list-item-icon4,
+  .why-choose-us-list-item-icon5,
+  .why-choose-us-list-item-icon6,
+  .why-choose-us-list-item-icon7,
+  .why-choose-us-list-item-icon8 {
+    width: 60px; 
+    height: 60px;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .consultation-button {
+    padding: 10px 20px; 
+    font-size: 16px;
+  }
+}
+
+
 
 /* portfolio */
 .section-portfolio {
@@ -1052,6 +1181,11 @@ html {
   border-radius: 28px;
   opacity: var(--sds-size-stroke-border);
   background: rgba(255, 255, 255, 0.3);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .section-testimonial-icon-quotes {
@@ -1125,6 +1259,72 @@ html {
   font-weight: 200;
   line-height: normal;
 }
+
+@media (max-width: 1024px) {
+  .section-testimonial-lists {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; 
+    padding-right: 20px;
+    gap: 20px; 
+  }
+  .section-testimonial-list-item {
+    width: 100%; 
+    padding: 20px;
+    min-width: unset;
+  }
+  .section-testimonials-header-text-container {
+    width: 100%;
+    padding: 20px; 
+  }
+  .section-testimonials-header-text {
+    font-size: 36px; 
+  }
+  .section-testimonials-container h3 {
+    font-size: 30px; 
+    padding-left: 20px; 
+  }
+}
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .section-testimonial-lists {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 10px; 
+    padding-right: 10px;
+    gap: 15px; 
+  }
+  .section-testimonial-list-item {
+    width: 100%; 
+    padding: 15px; 
+  }
+  .section-testimonials-header-text-container {
+    width: 100%;
+    padding: 15px; 
+  }
+  .section-testimonials-header-text {
+    font-size: 28px;
+  }
+  .section-testimonial-message p {
+    font-size: 16px;
+  }
+  .section-testimonial-message-by-container {
+    gap: 8px; 
+  }
+  .section-testimonial-icon-picture {
+    width: 50px; 
+    height: 50px;
+  }
+  .section-testimonial-message-by-name-position h3 {
+    font-size: 18px; 
+  }
+  .section-testimonial-message-by-name-position p {
+    font-size: 12px; 
+  }
+}
+
+
+
 
 /* --------------------------------------------------------------FAQ------------------------------------------------------------------------- */
 
