@@ -798,11 +798,6 @@ html {
 .why-choose-us-list-item-subtitle {
   text-align: left; 
 }
-/* @media (max-width: 768px) {
-  .why-choose-us-list-item {
-    width: 100%;
-  }
-} */
 
 /* Tablet View (768px - 1024px) */
 @media (max-width: 1024px) {
@@ -867,7 +862,7 @@ html {
 /* Mobile View (up to 767px) */
 @media (max-width: 767px) {
   .why-choose-us-container {
-    padding: 0 10px; /* Reduce padding for mobile view */
+    padding: 0 10px;
     margin-top: 20px;
   }
   .section-why-choose-us-heading-container {
@@ -876,10 +871,10 @@ html {
   }
   .section-why-choose-us-heading-text-container {
     width: 100%;
-    padding: 10px 0; /* Reduce padding */
+    padding: 10px 0; 
   }
   .section-why-choose-us-heading-text {
-    font-size: 36px; /* Reduce heading font size */
+    font-size: 36px;
     margin: auto;
   }
   .section-why-choose-us-heading-subtitle-container {
@@ -888,26 +883,26 @@ html {
     justify-content: center;
   }
   .section-why-choose-us-heading-subtitle-text {
-    font-size: 20px; /* Adjust subtitle font size */
+    font-size: 20px; 
     text-align: center;
   }
   .section-why-choose-us-list {
-    flex-direction: column; /* Stack list items vertically */
+    flex-direction: column;
     padding: 0;
     gap: 15px;
   }
   .why-choose-us-list-item {
-    width: 100%; /* Full width for mobile view */
-    padding: 15px; /* Adjust padding for mobile */
+    width: 100%; 
+    padding: 15px; 
     margin-bottom: 15px;
   }
   .why-choose-us-list-item-container {
-    flex-direction: column; /* Stack icon and content vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
   .why-choose-us-list-item-title {
-    font-size: 16px; /* Smaller font size for mobile */
+    font-size: 16px; 
     margin: auto;
     margin-bottom: 10px;
   }
@@ -922,7 +917,7 @@ html {
   .why-choose-us-list-item-icon6,
   .why-choose-us-list-item-icon7,
   .why-choose-us-list-item-icon8 {
-    width: 60px; /* Reduce icon size for mobile */
+    width: 60px; 
     height: 60px;
   }
   .button-container {
@@ -930,7 +925,7 @@ html {
     margin-top: 20px;
   }
   .consultation-button {
-    padding: 10px 20px; /* Adjust button padding for mobile */
+    padding: 10px 20px; 
     font-size: 16px;
   }
 }
