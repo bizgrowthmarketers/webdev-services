@@ -1,25 +1,38 @@
-function animateCounter(element, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    element.textContent = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    } else {
-      element.textContent += "+";
-
-      setTimeout(() => {
-        element.textContent = "0";
-        animateCounter(element, 0, end, duration);
-      }, 5000);
+// Function to initiate the counter animation using a worker
+function startCounterWorker(element, start, end, duration) {
+  // Function to handle the worker lifecycle
+  let worker;
+  function startWorker() {
+    // Terminate any existing worker
+    if (worker) {
+      worker.terminate();
     }
-  };
-  window.requestAnimationFrame(step);
+    worker = new Worker('/js/counterWorker.js');
+    worker.onmessage = function (event) {
+      const { value, done } = event.data;
+      element.textContent = value;
+      if (done) {
+        element.textContent += '+';
+        // Clear any existing timeout to avoid multiple resets
+        clearTimeout(restartTimeout);
+        // Reset the counter after 5 seconds
+        restartTimeout = setTimeout(() => {
+          element.textContent = '0';
+          // Restart the animation
+          startWorker();
+        }, 5000);
+      }
+    };
+    // Start the worker with the animation parameters
+    worker.postMessage({ start, end, duration });
+  }
+  let restartTimeout;
+  startWorker(); // Start the initial animation
 }
+// Select all counter elements
+const counters = document.querySelectorAll('.counter-container');
 
-const counters = document.querySelectorAll(".counter-container");
 counters.forEach((counter) => {
-  const endValue = parseInt(counter.textContent.replace(/\D/g, ""), 10);
-  animateCounter(counter, 0, endValue, 3000);
+  const endValue = parseInt(counter.textContent.replace(/\D/g, ''), 10);
+  startCounterWorker(counter, 0, endValue, 3000);
 });

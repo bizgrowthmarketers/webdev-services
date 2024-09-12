@@ -393,9 +393,10 @@ html {
 }
 .swiper-pagination-bullet {
   background-color: var(--turquoise);
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   opacity: 1;
+  /* gap: 20px; */
 }
 .swiper-pagination-bullet-active {
   background-color: var(--peru);
