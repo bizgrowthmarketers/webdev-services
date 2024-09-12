@@ -7,7 +7,7 @@ function startCounterWorker(element, start, end, duration) {
     if (worker) {
       worker.terminate();
     }
-    worker = new Worker('/js/counterWorker.js');
+    worker = new Worker('./js/counterWorker.js');
     worker.onmessage = function (event) {
       const { value, done } = event.data;
       element.textContent = value;
