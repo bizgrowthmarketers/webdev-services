@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const typedElement = document.getElementById('typedElement');
   // Create a new worker
-  const worker = new Worker('/js/typedWorker.js');
+  const worker = new Worker('./js/typedWorker.js');
   // Listen to messages from the worker
   worker.onmessage = function (event) {
     if (event.data.action === 'type') {
