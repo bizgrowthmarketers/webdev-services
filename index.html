@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"
     />
     <meta
       name="description"
@@ -32,14 +32,13 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
 
+    <script src="./js/typedWords.js"></script>
+    <script defer src="./js/animateCounter.js"></script>
     <script defer src="./js/designsData.js"></script>
     <script defer src="./js/developmentData.js"></script>
     <script defer src="./js/mainData.js"></script>
     <script defer src="./js/scrollToTop.js"></script>
-    <script defer src="./js/particles.js"></script>
-    <script defer src="./js/typedWords.js"></script>
     <script defer src="./js/modalMenu.js"></script>
-    <script defer src="./js/animateCounter.js"></script>
   </head>
   <body>
     <header class="header">
@@ -56,7 +55,7 @@
               <a href="#" target="_blank" rel="noopener noreferrer">SEO</a>
             </li>
           </ul>
-          <button type="button" class="hamburger" id="hamburger">
+          <button type="button" class="hamburger" id="hamburger" aria-label="hamburger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -82,19 +81,19 @@
           </div>
           <div class="hero-buttons">
             <button
-              type="button"
-              class="button-know hvr-shutter-in-horizontal"
-              onclick="document.getElementById('footer-know-how').scrollIntoView({ behavior: 'smooth' })"
+            type="button"
+            class="button-know hvr-shutter-in-horizontal"
+            onclick="document.getElementById('footer-know-how').scrollIntoView({ behavior: 'smooth' })"
             >
-              Want to Know How
-            </button>
+            Want to Know How
+          </button>
             <button
-              type="button"
-              class="button-consultation hvr-grow-rotate"
-              onclick="document.getElementById('footer-consultation').scrollIntoView({ behavior: 'smooth' })"
+            type="button"
+            class="button-consultation hvr-grow-rotate"
+            onclick="document.getElementById('footer-consultation').scrollIntoView({ behavior: 'smooth' })"
             >
-              Book a FREE Consultation
-            </button>
+            Book a FREE Consultation
+          </button>
           </div>
           <div class="stats-container">
             <div class="milestone-container">
@@ -108,14 +107,16 @@
           </div>
           <div class="round-laptop">
             <img
-              src="./images/hero/roundlaptop.webp"
-              alt="picture of a laptop"
+            src="./images/hero/roundlaptop.webp"
+            alt="picture of a laptop"
+            loading="lazy"
             />
           </div>
           <div class="round-man">
             <img
-              src="./images/hero/roundman.webp"
-              alt="man working in a computer"
+            src="./images/hero/roundman.webp"
+            alt="man working in a computer"
+            loading="lazy"
             />
           </div>
         </section>
@@ -136,9 +137,9 @@
             <div class="swiper-slide painpoints-detail-container">
               <div class="painpoints-container">
                 <img
-                  src="./images/painpoints/floppy.webp"
-                  alt="museum item floppy disk"
-                  loading="lazy"
+                src="./images/painpoints/floppy.webp"
+                alt="museum item floppy disk"
+                loading="lazy"
                 />
                 <div class="painpoints-description-container">
                   <h3 class="painpoints-title">
@@ -159,27 +160,27 @@
                   src="./images/painpoints/headache.webp"
                   alt="woman having a headache"
                   loading="lazy"
-                />
-                <div class="painpoints-description-container">
-                  <h3 class="painpoints-title">
-                    Overwhelmed by Complex Website Management
-                  </h3>
-                  <p class="painpoints-detail">
-                    We streamline website management with user-friendly systems
-                    and intuitive interfaces. Our solutions make it easy for you
-                    to update content, manage features, and maintain your site
-                    without hassle, freeing up your time to focus on your
-                    business.
-                  </p>
+                  />
+                  <div class="painpoints-description-container">
+                    <h3 class="painpoints-title">
+                      Overwhelmed by Complex Website Management
+                    </h3>
+                    <p class="painpoints-detail">
+                      We streamline website management with user-friendly systems
+                      and intuitive interfaces. Our solutions make it easy for you
+                      to update content, manage features, and maintain your site
+                      without hassle, freeing up your time to focus on your
+                      business.
+                    </p>
                 </div>
               </div>
             </div>
             <div class="swiper-slide painpoint-detail-container">
               <div class="painpoints-container">
                 <img
-                  src="./images/painpoints/down.webp"
-                  alt="going down charts"
-                  loading="lazy"
+                src="./images/painpoints/down.webp"
+                alt="going down charts"
+                loading="lazy"
                 />
                 <div class="painpoints-description-container">
                   <h3 class="painpoints-title">
@@ -200,9 +201,9 @@
             <div class="swiper-slide painpoints-detail-container">
               <div class="painpoints-container">
                 <img
-                  src="./images/painpoints/searching.webp"
-                  alt="man looking through magnifying glass"
-                  loading="lazy"
+                src="./images/painpoints/searching.webp"
+                alt="man looking through magnifying glass"
+                loading="lazy"
                 />
                 <div class="painpoints-description-container">
                   <h3 class="painpoints-title">
@@ -228,13 +229,13 @@
         </div>
         <div class="button-container">
           <button
-            type="button"
-            class="consultation-button hvr-radial-out"
-            onclick="window.open('https://calendar.app.google/25YrZTPW2WefFWNJA', '_blank', 'noopener,noreferrer');"
+          type="button"
+          class="consultation-button hvr-radial-out"
+          onclick="window.open('https://calendar.app.google/25YrZTPW2WefFWNJA', '_blank', 'noopener,noreferrer');"
           >
-            Book a FREE Consultation
-          </button>
-        </div>
+          Book a FREE Consultation
+        </button>
+      </div>
       </section>
       <!-- features -->
       <section class="section section-features">
@@ -249,16 +250,16 @@
           <li class="features-list hvr-grow">
             <h3 class="features-title">Custom Website Development</h3>
             <img
-              class="features-image"
+            class="features-image"
               src="./images/features/development.jpg"
               alt="an image showing web development"
               loading="lazy"
-            />
-            <div class="overlay">
-              <h3 class="overlay-title">Custom Website Development</h3>
-              <p class="overlay-description">
-                Tailored solutions crafted to match your business strategy and
-                brand essence.
+              />
+              <div class="overlay">
+                <h3 class="overlay-title">Custom Website Development</h3>
+                <p class="overlay-description">
+                  Tailored solutions crafted to match your business strategy and
+                  brand essence.
               </p>
               <p class="overlay-description">
                 Technologies: React, Angular, Javascript, Vue.js, Node.js, etc.
@@ -268,10 +269,10 @@
           <li class="features-list hvr-grow">
             <h3 class="features-title">Responsive Design</h3>
             <img
-              class="features-image"
-              src="./images/features/responsive.jpg"
-              alt="an image showing computer and smartphone"
-              loading="lazy"
+            class="features-image"
+            src="./images/features/responsive.jpg"
+            alt="an image showing computer and smartphone"
+            loading="lazy"
             />
             <div class="overlay">
               <h3 class="overlay-title">Responsive Design</h3>
@@ -859,6 +860,7 @@
             src="./images/testimonials/testimonial-video.mp4"
             type="video/mp4"
           />
+          <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
           Your browser does not support the video tag.
         </video>
         <div class="section-testimonials-header-text-container">
@@ -1458,6 +1460,7 @@
     <script type="module" src="./js/websiteDesign.js"></script>
     <script type="module" src="./js/plugin.js"></script>
     <script type="module" src="./js/faq.js"></script>
+    <script defer src="./js/particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

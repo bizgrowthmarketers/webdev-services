@@ -1,50 +1,17 @@
-const typedElement = document.getElementById("typedElement");
-const strings = [
-  "Affordable,",
-  "Reliable,",
-  "SEO Ready,",
-  "Structured Navigation,",
-];
-let currentStringIndex = 0;
-let currentCharIndex = 0;
-let isTyping = true;
-
-function type() {
-  if (isTyping) {
-    const currentString = strings[currentStringIndex];
-    const currentChar = currentString[currentCharIndex];
-
-    typedElement.innerHTML += currentChar;
-
-    currentCharIndex++;
-
-    if (currentCharIndex >= currentString.length) {
-      isTyping = false;
-      setTimeout(deleteText, 1000); // Delay before deleting
-    } else {
-      setTimeout(type, 100); // Adjust typing speed as needed
+document.addEventListener('DOMContentLoaded', function () {
+  const typedElement = document.getElementById('typedElement');
+  // Create a new worker
+  const worker = new Worker('/js/typedWorker.js');
+  // Listen to messages from the worker
+  worker.onmessage = function (event) {
+    if (event.data.action === 'type') {
+      // Append the character
+      typedElement.innerHTML += event.data.char;
+    } else if (event.data.action === 'delete') {
+      // Delete the last character
+      typedElement.innerHTML = typedElement.innerHTML.slice(0, -1);
     }
-  }
-}
-
-function deleteText() {
-  if (!isTyping) {
-    const currentString = strings[currentStringIndex];
-
-    typedElement.innerHTML = typedElement.innerHTML.slice(0, -1);
-
-    currentCharIndex--;
-
-    if (currentCharIndex <= 0) {
-      currentStringIndex = (currentStringIndex + 1) % strings.length;
-      currentCharIndex = 0;
-      isTyping = true;
-      setTimeout(type, 1000); // Delay before typing again
-    } else {
-      setTimeout(deleteText, 100); // Adjust deleting speed as needed
-    }
-  }
-}
-
-// Start the typing process
-type();
+  };
+  // Start the typing process by sending an initial message to the worker
+  worker.postMessage('start');
+});
