@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2adf80b7-3363-44a2-84e1-8a7112d701ae/deploy-status)](https://app.netlify.com/sites/webdev-services/deploys)
 # Project Overview
 This project is focused on offering professional website development and SEO services. The goal is to create high-quality, responsive websites that are optimized for search engines using only HTML, CSS, and JavaScript.
 
