@@ -2106,9 +2106,18 @@ footer {
   /* padding-left: 40px; */
 }
 
-.footer-sub-content div {
-  flex: 1;
+.footer-sub-content div:not(:last-child) {
+  flex: 1; /* All other divs except the last one take equal space */
+}
+
+.footer-sub-content div:last-child {
+  width: auto; /* Manually set width for the last div */
   padding: 0 20px;
+}
+
+.footer-sub-content div {
+  flex: 2;
+  /* padding: 0 20px; */
 }
 
 .footer-sub-content h3 {
@@ -2411,8 +2420,27 @@ label a:hover {
   box-shadow: 0px 24px 34px 0px rgba(32, 70, 100, 0.1);
 }
 
+@media screen and (width: 1024px) {
+  .footer-shape-rectangle {
+    padding: 0 20px;
+  }
+
+  .footer-logo{
+    left: 15%;
+  }
+
+  .footer-text {
+    top: 50%;
+    left: 27%;
+  }
+
+  .footer-sub-content {
+    padding-left: 20px;
+  }
+}
+
 /* Tablet View */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer-shape-rectangle {
     padding: 0 15px;
   }
@@ -2443,10 +2471,14 @@ label a:hover {
   .footer-social-media{
     margin-left: 0;
   }
+
+  .footer-item-5 {
+    grid-column: span 2;
+  }
 }
 
 /* Mobile View  */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px)  {
   .footer-container {
     display: flex;
     flex-direction: column;
