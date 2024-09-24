@@ -1348,21 +1348,18 @@ html {
   max-width: calc(100% - 70px);
   margin: 0 auto;
   padding: 40px 0;
+  position: relative;
 }
-
 .faq-container::before {
   content: "?";
   position: absolute;
-  /* top: 50%;  */
   left: 70%;
-  /* transform: translate(-50%, -50%);  */
   font-size: 830px;
   color: rgba(130, 194, 68, 0.2);
   z-index: 0; /* Place behind the content */
-  pointer-events: none; /* Make sure it doesn’t interfere with content interaction */
+  pointer-events: none; /* Make sure it doesn't interfere with content interaction */
   font-weight: bold;
 }
-
 .hidden {
   visibility: hidden;
   height: auto;
@@ -1372,7 +1369,6 @@ html {
   border: none;
   box-shadow: none;
 }
-
 .faq-title {
   color: var(--jade);
   text-align: center;
@@ -1382,7 +1378,6 @@ html {
   line-height: normal;
   margin: 0;
 }
-
 .faq-subtitle {
   text-align: center;
   color: var(--jade);
@@ -1390,7 +1385,6 @@ html {
   font-weight: 700;
   margin-top: 20px;
 }
-
 .faq-content {
   display: grid;
   justify-content: space-between;
@@ -1398,23 +1392,20 @@ html {
   margin-top: 60px;
   grid-template-columns: repeat(2, 1fr);
   align-items: stretch;
-  margin-top: 60px;
+  gap: 20px;
 }
-
 .faq-column {
   flex: 1;
   display: flex;
   flex: 0 0 calc(50% - 10px); /* Take up 50% of the width minus the gap */
   flex-direction: column;
 }
-
 .faq-category {
   flex: 1 1 100%;
   background: var(--white);
   padding: 15px;
   border-radius: 10px;
 }
-
 .faq-category-title {
   font-size: 24px;
   font-weight: 700;
@@ -1424,21 +1415,17 @@ html {
   font-style: normal;
   line-height: normal;
 }
-
 .accordion-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-bottom: 25px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
+  align-items: stretch; /* Ensure items stretch to the same height */
 }
-
-.accordion-item:last-child {
-  border-bottom: none;
-}
-
 .accordion-toggle {
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   border: none;
   color: var(--black);
   font-size: 1.2rem;
@@ -1453,21 +1440,18 @@ html {
   align-items: center;
   transition: background-color 0.4s ease;
   font-weight: bold;
+  height: 60px; /* Set a fixed height */
 }
-
 .accordion-toggle i {
   font-size: 1.2rem;
   transition: transform 0.4s ease;
 }
-
 .accordion-item.active .accordion-toggle {
-  background-color: #e8f5f3;
+  background-color: #E8F5F3;
 }
-
 .accordion-item.active .accordion-toggle i {
   transform: rotate(180deg);
 }
-
 .accordion-answer {
   max-height: 0;
   overflow: hidden;
@@ -1477,60 +1461,89 @@ html {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-
 .accordion-item.active .accordion-answer {
   max-height: 500px; /* Adjust based on content size */
   padding: 10px 20px 20px;
 }
-
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
   .faq-content {
     grid-template-columns: 1fr; /* Change to a single column layout */
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 0;
   }
-
+  .faq-title{
+    font-size: 1.25rem;
+  }
+  .faq-subtitle{
+    font-size: 1.2rem;
+  }
   .faq-category-title {
     font-size: 22px; /* Slightly smaller title */
   }
-
   .accordion-toggle {
     font-size: 1rem; /* Adjust font size for readability on smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+  }
+  .accordion-answer {
+    font-size: 1rem;
+  }
+  .accordion-iteme{
+    height: 0;
+    width: 0;
+  }
+  .faq-container::before {
+    content: "?";
+    position: absolute;
+    left: 50%;
+    font-size: 830px;
+    color: rgba(130, 194, 68, 0.2);
+    z-index: 0; /* Place behind the content */
+    pointer-events: none; /* Make sure it doesn't interfere with content interaction */
+    font-weight: bold;
   }
 }
-
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
   .faq-container {
     max-width: 100%; /* Full-width container */
     padding: 10px; /* Reduce padding on smaller screens */
   }
-
-  .faq-title {
-    font-size: 28px; /* Adjust title size */
+  .faq-title{
+    font-size: 1.25rem;
   }
-
-  .faq-subtitle {
-    font-size: 20px; /* Adjust subtitle size */
+  .faq-subtitle{
+    font-size: 1.2rem;
   }
-
   .faq-content {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
-
   .faq-category {
     padding: 10px; /* Adjust padding */
   }
-
   .accordion-toggle {
     font-size: 0.95rem; /* Further reduce font size */
     padding: 12px 15px; /* Adjust padding */
+    height: 45px; /* Adjust height for mobile screens */
   }
-
   .accordion-answer {
     padding: 0 15px; /* Adjust padding */
+    font-size: 1rem;
+  }
+  .faq-container::before {
+    content: "?";
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 500px;
+    color: rgba(130, 194, 68, 0.2);
+    z-index: 0; /* Place behind the content */
+    pointer-events: none; /* Make sure it doesn't interfere with content interaction */
+    font-weight: bold;
   }
 }
+
 /* process */
 .section-process {
   max-width: 90rem;
