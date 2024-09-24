@@ -22,17 +22,7 @@ For inquiries about website development or SEO services and to request a quote, 
 - **CSS3:** For styling and layout.
 - **JavaScript:** For adding interactivity and dynamic content.
 
-## Getting Started
-1. Clone this repository and open the `index.html` file.
-```bash
-git clone https://github.com/bizgrowthmarketers/webdev-services.git
-```
-2. Install dependencies (if any).
-3. Start the development server.
-
 ## Contributors
 - Percival Aceron - [GitHub Profile](https://github.com/perci-aceron)
 
-## License
-This project is licensed under the MIT License.
 
