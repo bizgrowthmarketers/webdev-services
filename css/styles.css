@@ -285,22 +285,24 @@ html {
   font-weight: bold;
   font-family: "Roboto Sans";
   border: none;
+  border-radius: 5px;
   background-color: var(--peru);
   cursor: pointer;
 }
 .button-consultation {
   width: 275px;
   padding: clamp(0.5rem, 0.3261rem + 0.8696vw, 1rem);
-  color: var(--black);
+  color: var(--white);
   font-size: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
   font-weight: bold;
   font-family: "Roboto Sans";
-  border: 1px solid var(--peru);
-  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--peru);
   cursor: pointer;
 }
 .button-consultation:hover {
-  color: var(--lime);
+  background-color: var(--lime);
 }
 .stats-container {
   display: flex;
@@ -403,11 +405,13 @@ html {
 }
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--turquoise);
+  color: var(--peru);
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: var(--peru);
+  color: var(--turquoise);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 .button-container {
   display: flex;
@@ -497,14 +501,13 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(40, 177, 187, 0.644);
+  background-color: rgba(40, 177, 187, 0.918);
   color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
   opacity: 0;
   transition: opacity 0.5s ease;
   padding: 1rem;
@@ -1062,7 +1065,7 @@ html {
 /* plugin development */
 .plugin-development-container {
   border-radius: 15px;
-  background-color: rgba(255, 167, 38, 0.5);
+  background-color: var(--turquoise);
   padding: var(--fluid-1-2);
 }
 .plugin-title-container {
@@ -1678,6 +1681,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 5px;
   background: var(--peru);
   transform: scaleX(1);
   transform-origin: 50%;
