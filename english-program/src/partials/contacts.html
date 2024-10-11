@@ -1,0 +1,45 @@
+<!-- CONTACTS -->
+<section id="contacts" class="contacts overlay">
+  <div class="contacts__container"> 
+    <h2 class="contacts__tittle tittle-container">
+      Registration for a <span class="color-accent">free</span> phone
+      <span class="color-accent">consultation</span> on the nuances of English UPE
+    </h2>
+    
+    <form action="#" class="contacts__form">
+      <p class="contacts__form-head">
+        Leave a request for participation in a <span class="color-accent">free lesson</span>.
+      </p>
+      <p class="contacts__form-head form-head">
+        A consultant will contact you and answer your questions
+      </p>
+      <label class="contacts__form-field">
+        <input
+          class="contacts__form-input input-usernam"
+          autocomplete="off"
+          title="Name. Please enter at least two letters"
+          type="text"
+          name="username"
+          placeholder="Name&#65121;"
+          minlength="2"
+        />
+      </label>
+      <label
+        data-title="Please enter your phone number in this format +380121234545"
+        class="contacts__form-field prompt-phone"
+        for="phone"
+      >
+        <input
+          id="phone"
+          class="contacts__form-input input-phone"
+          autocomplete="off"
+          type="tel"
+          name="phone"
+          placeholder="Phone&#65121;"
+          pattern="\+\d{2}\d{3}\d{3}\d{4}"
+        />
+      </label>
+      <button class="contacts__form-btn" type="submit">i want a free lesson</button>
+    </form>
+  </div>
+</section>

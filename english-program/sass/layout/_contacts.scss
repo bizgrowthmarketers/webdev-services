@@ -1,0 +1,295 @@
+//======================CONTACTS===================//
+.contacts {
+  width: auto;
+
+  &__tittle {
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: $ls-head;
+    color: $white-color;
+  }
+
+  &__form-head {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: $ls-main-text;
+    color: $white-color;
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 48px;
+    padding-left: 28px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    color: $white-color;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__form-input:not(:placeholder-shown):valid {
+    border-color: green;
+  }
+
+  &__form-input:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+
+  &__form-input::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    letter-spacing: $ls-main-text;
+    color: $white-color;
+  }
+
+  &__form-btn {
+    max-width: 260px;
+    padding-left: 43px;
+    padding-right: 43px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: $ls-main-text;
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: $accent-color;
+    border: inherit;
+    color: $white-color;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+    }
+  }
+}
+
+.prompt-phone {
+  position: relative;
+}
+
+.prompt-phone:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: $white-color;
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
+
+.overlay {
+  background-color: $main-color;
+  background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+    url('../images/contacts/bg-contacts-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-accent {
+  color: $accent-color;
+}
+
+.input-usernam {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .prompt-phone:hover::after {
+    left: 80px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/contacts/bg-contacts-mobile@2x.jpg');
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    padding: 56px 20px 55px 20px;
+
+    &__container {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    &__tittle {
+      font-size: 14px;
+      line-height: 1.29;
+      margin-bottom: 24px;
+    }
+
+    &__form-head {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    &__form-input {
+      max-width: 440px;
+    }
+  }
+
+  .form-head {
+    margin-bottom: 43px;
+  }
+
+  .input-phone {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/contacts/bg-contacts-tablet.jpg');
+  }
+
+  .contacts {
+    padding: 66px 40px 67px 40px;
+
+    &__container {
+      width: 688px;
+      margin: 0 auto;
+    }
+
+    &__tittle {
+      font-size: 26px;
+      line-height: 1.42;
+      margin-bottom: 50px;
+    }
+
+    &__form-head {
+      width: 452px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    &__form-input {
+      width: 390px;
+    }
+
+    &__form-btn {
+      min-width: 260px;
+    }
+  }
+
+  .form-head {
+    margin-bottom: 23px;
+  }
+
+  .input-usernam {
+    margin-bottom: 30px;
+  }
+
+  .input-phone {
+    margin-bottom: 31px;
+  }
+
+  .prompt-phone:hover::after {
+    left: 150px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/contacts/bg-contacts-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/contacts/bg-contacts-desktop.jpg');
+  }
+
+  .contacts {
+    padding: 100px 138px 62px 138px;
+
+    &__container {
+      width: 1090px;
+      margin: 0 auto;
+    }
+
+    &__tittle {
+      font-size: 46px;
+      line-height: 1.3;
+      margin-bottom: 50px;
+    }
+
+    &__form-head {
+      width: 1090px;
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &__form-input {
+      width: 478px;
+      height: 70px;
+      padding-left: 40px;
+    }
+
+    &__form-input::placeholder {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    &__form-btn {
+      min-width: 354px;
+      height: 70px;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: $ls-btn-desktop;
+    }
+  }
+
+  .form-head {
+    margin-bottom: 56px;
+  }
+
+  .input-usernam {
+    margin-bottom: 30px;
+  }
+
+  .input-phone {
+    margin-bottom: 80px;
+  }
+
+  .prompt-phone:hover::after {
+    left: 275px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+  (min-resolution: 192dpi) and (min-width: 1366px),
+  (min-resolution: 2dppx) and (min-width: 1366px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/contacts/bg-contacts-desktop@2x.jpg');
+  }
+}
+
+//======================CONTACTS END======================//

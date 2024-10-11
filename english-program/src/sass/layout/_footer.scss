@@ -1,0 +1,154 @@
+//======================FOOTER===================//
+
+.footer {
+  &__tel {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: $ls-main-text;
+  }
+
+  &__tel-icon {
+    margin-right: 10px;
+    fill: $accent-color;
+    width: 20px;
+    height: 19px;
+    line-height: 0;
+  }
+
+  &__copyright {
+    background: $main-color;
+    width: 100%;
+    height: 70px;
+  }
+
+  &__literary-property {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: $grey-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 30px;
+
+    &__contact {
+      max-width: 199px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    &__tel {
+      justify-content: center;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 31px;
+    }
+
+    &__social-network {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    &__literary-property {
+      display: flex;
+      justify-content: center;
+      padding-top: 21px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer {
+    &__contact-list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__tel {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    &__tel-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__literary-property {
+      width: 689px;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-top: 22px;
+    }
+  }
+
+  .liner::after {
+    content: '';
+    height: 40px;
+    width: 0px;
+    border: 1px solid $grey-color;
+    background-color: $grey-color;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .footer__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 689px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .footer {
+    &__contact {
+      display: flex;
+      width: 1366px;
+      margin: 0 auto;
+      padding-left: 26px;
+      padding-right: 26px;
+      padding-top: 52px;
+      padding-bottom: 53px;
+    }
+
+    &__logo {
+      margin-right: 290px;
+    }
+
+    &__tel-icon {
+      margin-right: 15px;
+      width: 30px;
+      height: 28px;
+    }
+    &__tel {
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &__literary-property {
+      width: 1366px;
+      margin: 0 auto;
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+  }
+
+  .liner::after {
+    margin-left: 16px;
+  }
+}
+
+//======================FOOTER END===================//

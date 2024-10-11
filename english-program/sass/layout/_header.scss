@@ -1,0 +1,225 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 0 20px;
+}
+.nav__container {
+  display: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:focus,
+.nav__link:hover {
+  color: $accent-color;
+}
+.btn {
+  display: none;
+  text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+  }
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(17, 21, 24, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  pointer-events: none;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0;
+  }
+
+  &__close-btn {
+    position: absolute;
+    background-color: transparent;
+    right: 15px;
+    top: 35px;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    animation: opacityy 250ms forwards;
+  }
+  @keyframes opacityy {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    color: $white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link--accent:focus,
+  &__link--accent:hover {
+    color: $accent-color;
+  }
+  &__list {
+    margin: 50px auto 50px auto;
+    color: $white-color;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+}
+.logo__img-mob-menu {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.mobile-menu__list-container {
+  margin-left: 20px;
+}
+.btn-consultation-mobile-menu {
+  width: 260px;
+  height: 48px;
+  margin: 0 auto;
+  color: $white-color;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-section {
+    display: block;
+  }
+  .header__container {
+    width: 440px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+  }
+  .mobile-menu__container {
+    width: 480px;
+  }
+  .mobile-menu__list {
+    margin: 50px auto 50px auto;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 688px;
+    padding: 40px 0 0 0;
+  }
+  .mobile-menu__container {
+    width: 768px;
+  }
+  .mobile-menu__btn {
+    margin-left: 40px;
+  }
+  .btn {
+    display: block;
+  }
+  .btn-consultation-mobile-menu {
+    display: none;
+  }
+  .mobile-menu__close-btn {
+    right: 40px;
+    top: 50px;
+  }
+  .mobile-menu__list-container {
+    margin: 0 auto;
+  }
+  .mobile-menu__list {
+    margin: 72px auto 72px auto;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.76;
+    letter-spacing: 0.03em;
+  }
+  .logo__img-mob-menu {
+    margin-top: 42px;
+    margin-left: 43px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .header__container {
+    padding: 33px 0 0 0;
+    width: 1314px;
+    margin: 0 auto;
+  }
+  .logo__img {
+    margin-right: 144px;
+  }
+  .nav {
+    &__container {
+      display: flex;
+      margin-right: 60px;
+    }
+    &__list {
+      display: flex;
+      width: 548px;
+      justify-content: space-between;
+    }
+    &__link {
+      color: $grey-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .btn-consultation {
+    margin-left: 0px;
+    height: 70px;
+  }
+}

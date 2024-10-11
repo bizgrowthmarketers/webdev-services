@@ -1,0 +1,154 @@
+// counter  CSS
+.benefits__list {
+  counter-reset: number 0;
+}
+.benefits__item {
+  counter-increment: number;
+}
+.benefits__item::before {
+  content: '— 0' counter(number);
+}
+// end counter  CSS
+
+.benefits {
+  position: relative;
+  background-color: transparent;
+  transform: translateY(-487px);
+  height: 0;
+
+  &__container {
+    max-width: 480px;
+    width: 100vw;
+    margin: 0 auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    max-width: 180px;
+    color: $white-color;
+  }
+
+  &__wrapper {
+    padding: 20px 14px 20px 30px;
+    background-color: $white-color;
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: $ls-main-text;
+
+    color: $accent-color;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+
+    color: $main-color;
+  }
+}
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    transform: translateY(-203px);
+
+    &__container {
+      max-width: 768px;
+
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__title {
+      max-width: unset;
+      text-align: center;
+    }
+
+    &__wrapper {
+      padding: 35px 118px 40px 98px;
+      height: 394px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: unset;
+      }
+      @media screen and (max-width: 1365px) {
+        &:nth-child(2n + 1) {
+          width: 236px;
+          margin-right: 20px;
+        }
+        &:nth-child(2n) {
+          width: 216px;
+        }
+      }
+    }
+
+    &__text {
+      margin-top: 18px;
+    }
+  }
+}
+
+// DESKTOP STYLES
+
+@media screen and (min-width: 1366px) {
+  .benefits {
+    transform: translateY(-200px);
+
+    &__container {
+      min-width: 1366px;
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      visibility: hidden;
+      height: 1px;
+    }
+
+    &__wrapper {
+      min-width: 1314px;
+      height: 398px;
+      padding: 70px 82px 70px 84px;
+    }
+
+    &__item {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.64;
+      width: 356px;
+    }
+
+    &__text {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+}
