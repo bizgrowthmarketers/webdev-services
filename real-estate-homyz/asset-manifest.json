@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/real-estate-homyz/static/css/main.c9b84298.css",
+    "main.js": "/real-estate-homyz/static/js/main.abb8bd97.js",
+    "index.html": "/real-estate-homyz/index.html",
+    "main.c9b84298.css.map": "/real-estate-homyz/static/css/main.c9b84298.css.map",
+    "main.abb8bd97.js.map": "/real-estate-homyz/static/js/main.abb8bd97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9b84298.css",
+    "static/js/main.abb8bd97.js"
+  ]
+}
