@@ -1,0 +1,147 @@
+<header class="header section header-section">
+  <div class="container header__container">
+    <div class="logo logo-header">
+      <a class="logo__link link" href="./index.html">
+        <picture>
+          <source
+            srcset="./images/logo/logo-desktop.webp 1x, ./images/logo/logo-desktop2x.webp 2x"
+            media="(min-width: 1366px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-desktop.png 1x, ./images/logo/logo-desktop2x.png 2x"
+            media="(min-width: 1366px)"
+          />
+          <source
+            srcset="./images/logo/logo-tablet.webp 1x, ./images/logo/logo-tablet2x.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-tablet.png 1x, ./images/logo/logo-tablet2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/logo/logo-mob.webp 1x, ./images/logo/logo-mob2x.webp 2x"
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-mob.png 1x, ./images/logo/logo-mob2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <img class="logo__img" src="#" alt="Logo Hellen include fire icon" />
+        </picture>
+      </a>
+    </div>
+    <nav class="nav">
+      <div class="nav__container">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#studying-program"
+              >studying program</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#about">about</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#training-option">training options</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#contacts">contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="btn-container btn-container-consultation">
+      <button type="button" class="btn btn-consultation btn-consultation-header" data-modal-open>
+        consultation by phone
+      </button>
+    </div>
+
+    <button type="button" class="mobile-menu-btn" data-menu-button>
+      <svg class="mobile-menu-icon" width="20px" height="14px">
+        <use href="./images/icons/sprite.svg#burger-icon"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+        <div class="logo-mobile-menu">
+          <a class="logo-mobile-menu__link link" href="./index.html">
+            <picture>
+              <source
+                srcset="
+                  ./images/logo/logo-tablet-menu.webp   1x,
+                  ./images/logo/logo-tablet-menu2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/logo/logo-tablet-menu.png   1x,
+                  ./images/logo/logo-tablet-menu2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/logo/logo-mob-menu.webp 1x, ./images/logo/logo-mob-menu2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/logo/logo-mob-menu.png 1x, ./images/logo/logo-mob-menu2x.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="logo__img-mob-menu"
+                src="./images/logo/logo-mob-menu.png"
+                alt="Logo Hellen include fire icon"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <button
+          type="button"
+          class="mobile-menu__close-btn mobile-menu__close-btn--accent"
+          data-menu-close
+        >
+          <svg class="mobile-menu__close-btn-svg" width="15px" height="15px">
+            <use href="./images/icons/sprite.svg#close-mobile-icon"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu__list-container">
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item" program-menu-close>
+              <a class="mobile-menu__link mobile-menu__link--accent link" href="#studying-program"
+                >Studying program</a
+              >
+            </li>
+            <li class="mobile-menu__item" about-menu-close>
+              <a class="mobile-menu__link mobile-menu__link--accent link" href="#about">About</a>
+            </li>
+            <li class="mobile-menu__item" training-menu-close>
+              <a class="mobile-menu__link mobile-menu__link--accent link" href="#training-option"
+                >Training-option</a
+              >
+            </li>
+            <li class="mobile-menu__item" contacts-menu-close>
+              <a class="mobile-menu__link mobile-menu__link--accent link" href="#contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn-consultation-mobile-menu" data-modal-open>
+          consultation by phone
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

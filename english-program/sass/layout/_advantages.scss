@@ -1,0 +1,138 @@
+.advantages {
+  padding-top: 15px;
+  padding-bottom: 44px;
+
+  &__container {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__list {
+    width: 216px;
+    margin: 0 auto;
+  }
+  &__list li {
+    margin-bottom: 19px;
+  }
+  &__list li:nth-child(1) {
+    position: relative;
+    padding-left: 69px;
+    width: 214px;
+  }
+  &__list li:nth-child(1)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    background-size: cover;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/icons/advantages-program-mob-tab-icon.svg);
+  }
+  &__list li:nth-child(2) {
+    position: relative;
+    padding-left: 75px;
+    width: 216px;
+  }
+  &__list li:nth-child(2)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    background-size: cover;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/icons/advantages-methods-mob-tab-icon.svg);
+  }
+  &__list li:nth-child(3) {
+    position: relative;
+    padding-left: 77px;
+    width: 215px;
+  }
+  &__list li:nth-child(3)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    background-size: cover;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/icons/advantages-guarante-mob-tab-icon.svg);
+  }
+  &__list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: $ls-main-text;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    &__container {
+      width: 688px;
+    }
+    &__list {
+      width: 688px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -21px;
+      margin-left: -21px;
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (min-width: 1366px) {
+  .advantages {
+    padding-top: 88px;
+    padding-bottom: 115px;
+    &__container {
+      width: 1314px;
+    }
+    &__list {
+      width: 1314px;
+      justify-content: space-between;
+    }
+    &__list li:nth-child(1) {
+      padding-left: 82px;
+      width: 250px;
+    }
+    &__list li:nth-child(1)::before {
+      width: 100px;
+      height: 102px;
+      background-image: url(../images/icons/advantages-program-desktop-icon.svg);
+    }
+    &__list li:nth-child(2) {
+      padding-left: 82px;
+      width: 250px;
+    }
+
+    &__list li:nth-child(2)::before {
+      width: 100px;
+      height: 102px;
+      background-image: url(../images/icons/advantages-methods-desktop-icon.svg);
+    }
+    &__list li:nth-child(3) {
+      padding-left: 82px;
+      width: 250px;
+    }
+
+    &__list li:nth-child(3)::before {
+      width: 100px;
+      height: 102px;
+      background-image: url(../images/icons/advantages-guarante-desktop-icon.svg);
+    }
+    &__list div {
+      height: 102px;
+      width: 168px;
+    }
+  }
+}

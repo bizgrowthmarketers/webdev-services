@@ -1,0 +1,213 @@
+.section-problems-background {
+    position: relative;
+    background-image: linear-gradient(to bottom, $main-color 75%, $white-color 50%);
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to bottom, $main-color 60%, $white-color 50%);
+
+    }
+
+    @media screen and (min-width: 1366px) {
+        background-image: url(../images/icons/fire-background.svg), linear-gradient(to bottom, $main-color 77%, $white-color 50%);
+        background-position: 100% 37%;
+        background-repeat: no-repeat;
+    }
+}
+
+.problems {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        padding-top: 100px;
+    }
+
+
+    &__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 40px;
+            padding-right: 40px;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 1366px) {
+            padding-right: 26px;
+            padding-left: 26px;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        max-width: 440px;
+        display: block;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.36;
+        letter-spacing: 0.03em;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        text-align: left;
+
+        color: $white-color;
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            margin-bottom: 25px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            max-width: 1366px;
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 1.30;
+            margin-bottom: 70px;
+        }
+    }
+
+    &__title-accent {
+        color: $accent-color
+    }
+
+    &__wrapper {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 19px 25px 19px 30px;
+        background-color: $white-color;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        
+
+        @media screen and (min-width: 768px) {
+            padding-top: 26px;
+            padding-right: 47px;
+            padding-bottom: 30px;
+            padding-left: 96px;
+            min-width: 688px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            padding-top: 70px;
+            padding-right: 112px;
+            padding-bottom: 62px;
+            padding-left: 114px;
+            max-width: 1314px;    
+        }
+    }
+
+    &__list {
+        color: $accent-color;
+
+        @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        
+    }
+
+    &__list-item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.08em;
+        margin-bottom: 15px;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 167px) / 2);
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        @media screen and (min-width: 1366px) {
+            width: calc((100% - 306px) / 3);
+            font-size: 20px;
+            line-height: 1.2;
+            width: 336px;
+            margin-bottom: 32px;
+            
+        }
+    }
+
+    &__list-item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__list-item:nth-last-child(-n + 2) {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list-item:nth-last-child(-n + 3) {
+        @media screen and (min-width: 1366px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list-item:nth-last-child(even) {
+        @media screen and (min-width: 768px) and (max-width: 1365px) {
+            margin-right: 67px;
+        }
+    }
+
+    &__list-item:nth-child(3n + 3) {
+        @media screen and (min-width: 1366px) {
+            margin-right: 0;
+        }
+    }
+
+    &__list-description {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.42;
+        color: $main-color;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 13px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            font-size: 20px;
+            line-height: 1.4;
+            letter-spacing: 0.08em;
+        }
+    }
+}
+
+//-----CSS-Counter-----//
+
+.problems__list {
+    counter-reset: number 0;
+}
+
+.problems__list-item {
+    counter-increment: number;
+}
+
+.problems__list-item::before {
+    content: '— 0' counter(number);
+}
+
+
+
+
+
+
+
+
+
+
+
