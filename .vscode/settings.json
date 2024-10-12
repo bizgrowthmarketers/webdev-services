@@ -22,24 +22,24 @@ HEAD
     "swiper"
   ],
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#fbed80",
-    "activityBar.background": "#fbed80",
+    "activityBar.activeBackground": "#6C9377",
+    "activityBar.background": "#6C9377",
     "activityBar.foreground": "#15202b",
     "activityBar.inactiveForeground": "#15202b99",
     "activityBarBadge.background": "#06b9a5",
     "activityBarBadge.foreground": "#15202b",
     "commandCenter.border": "#15202b99",
-    "sash.hoverBorder": "#fbed80",
-    "statusBar.background": "#f9e64f",
+    "sash.hoverBorder": "#6C9377",
+    "statusBar.background": "#89A992",
     "statusBar.foreground": "#15202b",
-    "statusBarItem.hoverBackground": "#f7df1e",
-    "statusBarItem.remoteBackground": "#f9e64f",
+    "statusBarItem.hoverBackground": "#6C938B",
+    "statusBarItem.remoteBackground": "#89A992",
     "statusBarItem.remoteForeground": "#15202b",
-    "titleBar.activeBackground": "#f9e64f",
+    "titleBar.activeBackground": "#89A992",
     "titleBar.activeForeground": "#15202b",
-    "titleBar.inactiveBackground": "#f9e64f99",
+    "titleBar.inactiveBackground": "#89A99299",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#f9e64f"
+  "peacock.color": "#89A992"
  c55dfc4 (a lot of edits)
 }
