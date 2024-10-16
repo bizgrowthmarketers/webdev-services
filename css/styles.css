@@ -433,6 +433,8 @@ html {
 }
 .painpoints-container {
   display: grid;
+  width: 90%;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: var(--fluid-1-2);
@@ -465,24 +467,31 @@ html {
   margin: 0 auto;
   padding-top: 3rem;
 }
-.swiper-pagination-bullet {
+span.swiper-pagination-bullet {
   background-color: var(--turquoise);
   width: 16px;
   height: 16px;
   opacity: 1;
 }
-.swiper-pagination-bullet-active {
+span.swiper-pagination-bullet-active {
   background-color: var(--peru);
 }
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--peru);
+#prev-btn,
+#next-btn {
+  top: 60%;
+  color: #fff;
+  background-color: var(--peru);
+  border-radius: 5px;
 }
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: var(--turquoise);
-  transform: scale(1.2);
+#prev-btn:hover,
+#next-btn:hover {
+  background-color: var(--lime);
+  transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+#next-btn:after, 
+#prev-btn:after {
+  font-size: 1.5rem;
 }
 .button-container {
   display: flex;
