@@ -1167,13 +1167,13 @@ span.swiper-pagination-bullet-active {
   font-size: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
   text-align: center;
 }
-.plugin-img-container {
+/* .plugin-img-container {
   display: flex;
-  justify-content: center;
   align-content: center;
-}
+  justify-content: center;
+  } */
 .plugin-img-container img {
-  cursor: pointer;
+  margin: 0 auto;
 }
 /* process */
 .section-process {
